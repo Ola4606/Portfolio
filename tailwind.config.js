@@ -14,6 +14,7 @@ module.exports = {
       fontFamily: {
         sans: ["Be Vietnam Pro", "Inter", "system-ui", "sans"],
         monospace: ["DM Mono", "monospace"],
+        logo: "Pacifico"
       },
 
       colors: {
