@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.socialIcons {
+    @apply w-[30px] h-[30px] md:w-[35px] md:h-[35px] border-2 border-gray-700 rounded-full p-[5px] cursor-pointer
+}
