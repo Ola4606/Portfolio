@@ -2,6 +2,19 @@ import smileImage from "../../images/bitmojies/smile.png";
 import Button from "../general/button";
 
 function AboutMe() {
+  function downloadResume() {
+    fetch("resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Adeyemo OlaOluwa (Resume).pdf";
+        alink.click();
+      });
+    });
+  }
+
   return (
     <div
       className="bg-white bg-left bg-no-repeat"
@@ -18,19 +31,25 @@ function AboutMe() {
             </p>
             <div className="mt-4 md:mt-8">
               <p className="font-sans text-base md:text-lg lg:text-xl font-medium text-right text-black">
-                I am a software developer based in Lagos, Nigeria; currently
-                studying Economics at Pan-Atlantic University. I am always open
-                to learning new skills, and working with others in a team to
-                create software products that solve problems.
+                I am a fullstack software developer, currently studying
+                Economics. I am always open to learning new skills, and working
+                with others in a team to create software products that solve
+                problems.
                 <br />
                 <br />
                 In my free time, I play video games and watch movies.
               </p>
             </div>
 
-            <div className="mt-4 md:mt-8 flex justify-end gap-4">
-              <Button btnText={"Resume"} handleClick={() => {}} />
-              <a href="https://4realdev.hashnode.dev/" target="_blank" rel="noopener noreferrer"><Button btnText={"Blog"} handleClick={() => {}} /></a>
+            <div className="mt-4 md:mt-8 flex justify-end flex-wrap gap-4">
+              <Button btnText={"Resume"} handleClick={downloadResume} />
+              <a
+                href="https://4realdev.hashnode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button btnText={"Blog"} handleClick={() => {}} />
+              </a>
             </div>
           </div>
         </div>

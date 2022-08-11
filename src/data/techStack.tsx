@@ -38,7 +38,7 @@ export default [ //data of my tech stack. Programming Languages and Technologies
     },
 
     {
-        name: "Tailwind.css",
+        name: "TailwindCSS",
         logoUrl: TailwindLogo
     },
 
@@ -48,7 +48,7 @@ export default [ //data of my tech stack. Programming Languages and Technologies
     },
 
     {
-        name: "Node.js",
+        name: "NodeJS",
         logoUrl: NodeLogo
     },
 
