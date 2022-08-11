@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo, memo } from "react";
 import swagImage from "../../images/bitmojies/swag.png";
 import TechIcon from "../general/techIcon";
 import TechStackData from "../../data/techStack";
@@ -37,4 +37,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default memo(Skills);

@@ -45,6 +45,19 @@ function ProjectDisplay() {
     });
   }, [name]);
 
+  const projectImagesElements = useMemo(() => {
+    return projectData.allImagesUrl.map((i, index) => {
+      return (
+        <div
+          key={index}
+          className=" overflow-hidden border-2 border-gray-600 p-1 rounded-md min-w-[240px] md:min-w-[256px] lg:min-w-[288px]"
+        >
+          <img src={i} alt="" className=" rounded-md min-w-full max-w-full h-auto" />
+        </div>
+      );
+    });
+  }, [name]);
+
   return (
     <div>
       <Nav />
@@ -60,7 +73,7 @@ function ProjectDisplay() {
           <p className="font-sans text-base md:text-lg lg:text-xl font-black text-left text-bold">
             Made with:
           </p>
-          <div className="mt-2 md:mt-3 flex wrap gap-4 md:gap-5">
+          <div className="mt-2 md:mt-3 flex flex-wrap gap-4 md:gap-5">
             {projectTechStackElements}
           </div>
         </div>
@@ -95,6 +108,15 @@ function ProjectDisplay() {
 
         <div className=" mt-5 md:mt-8">
           <p className="font-sans text-base md:text-lg lg:text-xl font-black text-left text-bold">
+            Some Images:
+          </p>
+          <div className=" flex justify-center items-start flex-wrap gap-5 mt-10 md:mt-14">
+            {projectImagesElements}
+          </div>
+        </div>
+
+        <div className=" mt-10 md:mt-14">
+          <p className="font-sans text-base md:text-lg lg:text-xl font-black text-left text-bold">
             Description:
           </p>
           <div className="mt-2 md:mt-3">{projectData.fullDescription}</div>
@@ -104,7 +126,7 @@ function ProjectDisplay() {
           <p className="font-sans text-base md:text-lg lg:text-xl font-black text-left text-bold">
             Tech Stack and Explanation:
           </p>
-          <div className="mt-2 md:mt-3 flex wrap gap-4 md:gap-5">
+          <div className="mt-2 md:mt-3">
             <ul className="list-disc list-inside font-sans text-base md:text-lg lg:text-xl font-normal text-left text-black">
               {techStackExplanationElements}
             </ul>

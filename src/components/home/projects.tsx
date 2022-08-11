@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, memo } from "react";
 import pointingImage from "../../images/bitmojies/pointing.png";
 import Button from "../general/button";
 import ProjectsData from "../../data/projectsData";
@@ -66,4 +66,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default memo(Projects);

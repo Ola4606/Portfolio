@@ -1,3 +1,6 @@
+import { memo } from "react";
+
+
 type TechIconPropType = {
   techLogo: string;
   techName: String;
@@ -16,4 +19,4 @@ function TechIcon({ techLogo, techName }: TechIconPropType) {
   );
 }
 
-export default TechIcon;
+export default memo(TechIcon);

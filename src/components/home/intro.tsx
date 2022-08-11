@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import waveImage from "../../images/bitmojies/wave-right.png";
 import SocialTags from "./socialTags";
 
@@ -28,4 +28,4 @@ function Intro() {
   );
 }
 
-export default Intro;
+export default memo(Intro);

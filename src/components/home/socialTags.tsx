@@ -1,3 +1,5 @@
+import { memo } from "react";
+
 function SocialTags() {
   return (
     <div className="flex justify-start items-center gap-2 md:gap-4">
@@ -53,4 +55,4 @@ function SocialTags() {
   );
 }
 
-export default SocialTags;
+export default memo(SocialTags);

@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import { useMemo, memo } from "react";
 import { Link } from "react-router-dom";
 
 type ProjectTilePropType = {
@@ -122,4 +122,4 @@ function ProjectTile({
   );
 }
 
-export default ProjectTile;
+export default memo(ProjectTile);

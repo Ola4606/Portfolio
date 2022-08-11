@@ -1,3 +1,4 @@
+import { memo } from "react";
 import smileImage from "../../images/bitmojies/smile.png";
 import Button from "../general/button";
 
@@ -58,4 +59,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default memo(AboutMe);

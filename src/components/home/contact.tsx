@@ -1,4 +1,4 @@
-import React from "react";
+import { memo } from "react";
 import contactImage from "../../images/bitmojies/contact.png";
 
 function Contact() {
@@ -56,4 +56,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default memo(Contact);
