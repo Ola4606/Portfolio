@@ -10,5 +10,5 @@
 }
 
 .projectDescription {
-    @apply mt-4
+    @apply flex flex-col justify-start items-start gap-3 md:gap-4 font-sans text-base md:text-lg lg:text-xl font-normal text-left text-black 
 }

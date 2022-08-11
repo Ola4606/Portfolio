@@ -2,6 +2,7 @@ export default [
   {
     projectID: "portfolio",
     name: "My Portfolio (Laolu.dev)",
+    projectType: "Website",
     techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
     mainImageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Portfolio%2F1.png?alt=media",
@@ -13,19 +14,42 @@ export default [
 
     fullDescription: (
       <div className="projectDescription">
-        This is a project personal to me, and I wanted it to look nice. Before
-        making the website, I developed my skills on CSS Grids and Flexboxes, as
-        I knew I would need them throughout the website (I used flexboxes all
-        through the website, and I used responsive grids, particularly in the
-        projects section). I made the website fully unique to me, and I used my
-        brand colors all through. As a web developer, I believe it is important
-        to show my skills through my portfolio (by building it myself from the
-        ground up), and that is exactly what I have done. Using TailwindCSS
-        breakpoints, I was able to make it fully responsive for mobile, tablet,
-        and laptop screens. While building this website, I was able to improve
-        my skills on some React principles and concepts, such as i) Using React
-        Hooks (namely useState, and useEffect), ii) Using React Memo, iii)
-        Passing and receiving props, iv) Using SVGs in React, etc.
+        <p>
+          This was a project personal to me, and I wanted it to look nice.
+          Before making the website, I developed my skills on CSS Grids and
+          Flexboxes, as I knew I would need them throughout the website{" "}
+          <i>
+            (I used flexboxes all through the website, and I used responsive
+            grids, particularly in the projects section)
+          </i>
+          .
+        </p>
+
+        <p>
+          I made the website fully unique to me, and I used my brand colors all
+          through. As a web developer, I believe it is important to show my
+          skills through my portfolio{" "}
+          <i>(by building it myself from the ground up)</i>, and that is exactly
+          what I have done.
+        </p>
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, and laptop screens.
+        </p>
+
+        <p>
+          While building this website, I was able to improve my skills on some
+          React principles and concepts, such as:
+          <ul className="list-disc list-inside">
+            <li>
+              Using React Hooks <i>(namely useState, and useEffect)</i>
+            </li>
+            <li>Using React Memo</li>
+            <li>Passing and receiving props</li>
+            <li>Using SVGs in React, etc.</li>
+          </ul>
+        </p>
       </div>
     ),
     techStackAndExplanation: [
@@ -56,6 +80,7 @@ export default [
   {
     projectID: "worlds-richest",
     name: "World's Richest",
+    projectType: "Website",
     techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
     mainImageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F1.png?alt=media",
@@ -70,28 +95,66 @@ export default [
 
     fullDescription: (
       <div className="projectDescription">
-        'World's Richest' was my first React project, and it was built using
-        React and TailwindCSS. It consumes live data from this API:
-        https://forbes400.herokuapp.com/api/forbes400/real-time which provides
-        data on the world's richest individuals in real-time. Although, this
-        website only shows data on the top 100 richest people. It allows users
-        to view the following data on the world's top 100 richest people: Rank,
-        Full Name, Net worth (in US dollars), Source of wealth, Residence, and
-        Bio (a brief background). As I said earlier, this was my first React
-        project, but I did not want to create the same old e-commerce website or
-        weather website that most Junior React developers were making, so I
-        created this. While creating this website I wanted to incorporate the
-        data available on the Forbes website into an easy-to-use and simple
-        website, so people could get the data they needed straight out of the
-        website without all the other distractions. Using TailwindCSS
-        breakpoints, I was able to make it fully responsive for mobile, tablet,
-        and laptop screens. While building this website, I was able to improve
-        my skills on some React principles and concepts, such as i) Using React
-        Hooks (namely useState, and useEffect), ii) Using React Memo, iii)
-        Passing and receiving props, iv) Using SVGs in React, etc. I also
-        learned new principles, which included the use of the Axios NPM package
-        for making HTTP requests; and using Asynchronous functions. Key NPM
-        Packages used: Axios
+        <p>
+          World's Richest was my first React project, and it was built using
+          React and TailwindCSS. It consumes live data from this API:
+        </p>
+        <a
+          href="https://forbes400.herokuapp.com/api/forbes400/real-time"
+          className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 underline underline-offset-2 decoration-gray-400"
+        >
+          https://forbes400.herokuapp.com/api/forbes400/real-time
+        </a>
+
+        <p>
+          which provides data on the world's richest individuals in real-time.
+          Although, this website only shows data on the top 100 richest people.
+        </p>
+        <p>
+          It allows users to view the following data on the world's top 100
+          richest people: Rank, Full Name, Net worth <i>(in US dollars)</i>,
+          Source of wealth, Residence, and Bio <i>(a brief background)</i>.
+        </p>
+        <p>
+          As I said earlier, this was my first React project, but I did not want
+          to create the same old e-commerce website or weather website that most
+          Junior React developers were making, so I created this.
+        </p>
+        <p>
+          While creating this website I wanted to incorporate the data available
+          on the Forbes website into an easy-to-use and simple website, so
+          people could get the data they needed straight out of the website
+          without all the other distractions.
+        </p>
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, and laptop screens.
+        </p>
+
+        <p>
+          While building this website, I was able to improve my skills on some
+          React principles and concepts, such as:
+          <ul className="list-disc list-inside">
+            <li>
+              Using React Hooks <i>(namely useState, and useEffect)</i>
+            </li>
+            <li>Using React Memo</li>
+            <li>Passing and receiving props</li>
+            <li>Using SVGs in React, etc.</li>
+          </ul>
+        </p>
+
+        <p>
+          I also learned new principles, which included the use of the Axios NPM
+          package for making HTTP requests; and using Asynchronous functions.
+        </p>
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          Axios
+        </p>
       </div>
     ),
     techStackAndExplanation: [
@@ -122,6 +185,7 @@ export default [
   {
     projectID: "calmslides",
     name: "CalmSlides",
+    projectType: "Website",
     techStackUsed: ["React", "TailwindCSS", "Typescript", "MongoDB", "Git"],
     mainImageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%2F1.png?alt=media",
@@ -137,47 +201,132 @@ export default [
 
     fullDescription: (
       <div className="projectDescription">
-        CalmSlides in basic terms is a marquee-styled slideshow of randomly
-        selected images. It is powered by another project of mine called the
-        “CalmSlides Bot” (this was a worker bot built with NodeJS, that ran for
-        4 days, and stored the metadata of about 100,000 Unsplash images | which
-        was all legal according to the Unsplash API guidelines). On the website,
-        users can have “Relaxation Sessions” for which they can set the time
-        (how long the slideshow will last, e.g., 5mins) and speed (how fast the
-        slideshow will move, e.g., Medium). The website uses the image URLs from
-        the metadata stored on my MongoDB database to power the relaxation
-        sessions, but there were some problems I ran into while building this
-        project with MongoDB: Immediate Problem: I am using the MongoDB free
-        tier, meaning that there are a limited number of connections allowed at
-        a time to the database (about 500 simultaneous connections). So, all
-        users could not be connected to the database directly. Solution: I used
-        the MongoDB Data API service to act as a medium between the users and
-        the MongoDB database. This solves the immediate problem because, all
-        users now retrieve data using an API, rather than connecting directly
-        with the database; meaning that only 1 connection is being made to the
-        database on behalf of all users. Further Problem: MongoDB prevents their
-        Data API service from being used directly from the browser
-        (client-side), due to some CORS policy violations, which was a problem I
-        did not know about until after writing the code to get data using the
-        Data API service. Solution: I used the MongoDB Realm service (through
-        the realm-web NPM package) which allows users to make the MongoDB Data
-        API calls (as a function) from the MongoDB servers and returns the data
-        to them on the browser. A Further Further Problem: I am using MongoDB
-        Realm on its free tier, hence I am limited to 1 million function calls
-        per month, after which users cannot use my website. Solution (Coming
-        Soon!): I aim to build an API using ExpressJS that runs the MongoDB API
-        calls server side to retrieve the data for the users. I will make
-        requests to this API using the Axios NPM package and return the data to
-        the browsers. This will allow me to avoid MongoDB Realm. Using
-        TailwindCSS breakpoints, I was able to make it fully responsive for
-        mobile, tablet, and laptop screens. While building this website, I was
-        able to improve my skills on some React principles and concepts, such as
-        i) Using React Hooks (namely useState, useEffect, and useMemo), ii)
-        Using React Memo, iii) Passing and receiving props, etc. I also learned
-        new principles, which included i) The React Router DOM NPM Package which
-        allowed me to add multi-page navigation to the website, and ii) The
-        Realm-web NPM package which allowed me to use MongoDB Realm services.
-        Key NPM Packages used: realm-web, react-timer-hook, react-router-dom
+        <p>
+          CalmSlides in basic terms is a marquee-styled slideshow of randomly
+          selected images.
+        </p>
+
+        <p>
+          It is powered by another project of mine called the “CalmSlides Bot”{" "}
+          <i>
+            (this was a worker bot built with NodeJS, that ran for 4 days, and
+            stored the metadata of about 100,000 Unsplash images | which was all
+            legal according to the Unsplash API guidelines)
+          </i>
+          .
+        </p>
+
+        <p>
+          On the website, users can have “Relaxation Sessions” for which they
+          can set the time
+          <i>(how long the slideshow will last, e.g., 5mins)</i> and speed{" "}
+          <i>(how fast the slideshow will move, e.g., Medium)</i>.
+        </p>
+
+        <p>
+          The website uses the image URLs from the metadata stored on my MongoDB
+          database to power the relaxation sessions, but there were some
+          problems I ran into while building this project with MongoDB:
+        </p>
+
+        <p>
+          <u>
+            <b>Immediate Problem:</b>
+          </u>{" "}
+          I am using the MongoDB free tier, meaning that there are a limited
+          number of connections allowed at a time to the database{" "}
+          <i>(about 500 simultaneous connections)</i>. So, all users could not
+          be connected to the database directly.
+        </p>
+
+        <p>
+          <u>
+            <b>Solution:</b>
+          </u>{" "}
+          I used the MongoDB Data API service to act as a medium between the
+          users and the MongoDB database. This solves the immediate problem
+          because, all users now retrieve data using an API, rather than
+          connecting directly with the database; meaning that only 1 connection
+          is being made to the database on behalf of all users.
+        </p>
+
+        <p>
+          <u>
+            <b>Further Problem:</b>
+          </u>{" "}
+          MongoDB prevents their Data API service from being used directly from
+          the browser
+          <i>(client-side)</i>, due to some CORS policy violations, which was a
+          problem I did not know about until after writing the code to get data
+          using the Data API service.
+        </p>
+
+        <p>
+          <u>
+            <b>Solution:</b>
+          </u>{" "}
+          I used the MongoDB Realm service{" "}
+          <i>(through the realm-web NPM package)</i> which allows users to make
+          the MongoDB Data API calls <i>(as a function)</i> from the MongoDB
+          servers and returns the data to them on the browser.
+        </p>
+
+        <p>
+          <u>
+            <b>A Further Further Problem:</b>
+          </u>{" "}
+          I am using MongoDB Realm on its free tier, hence I am limited to 1
+          million function calls per month, after which users cannot use my
+          website.
+        </p>
+
+        <p>
+          <u>
+            <b>Solution (Coming Soon!):</b>
+          </u>{" "}
+          I aim to build an API using ExpressJS that runs the MongoDB API calls
+          server side to retrieve the data for the users. I will make requests
+          to this API using the Axios NPM package and return the data to the
+          browsers. This will allow me to avoid MongoDB Realm.
+        </p>
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, and laptop screens.
+        </p>
+
+        <p>
+          While building this website, I was able to improve my skills on some
+          React principles and concepts, such as:
+          <ul className="list-disc list-inside">
+            <li>
+              Using React Hooks <i>(namely useState, useEffect, and useMemo)</i>
+            </li>
+            <li>Using React Memo</li>
+            <li>Passing and receiving props</li>
+          </ul>
+        </p>
+
+        <p>
+          I also learned new principles, which included:
+          <ul className="list-disc list-inside">
+            <li>
+              The React Router DOM NPM Package which allowed me to add
+              multi-page navigation to the website
+            </li>
+            <li>
+              The Realm-web NPM package which allowed me to use MongoDB Realm
+              services
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          realm-web, react-timer-hook, react-router-dom
+        </p>
       </div>
     ),
     techStackAndExplanation: [
@@ -218,6 +367,7 @@ export default [
   {
     projectID: "calmslides-bot",
     name: "CalmSlides Bot",
+    projectType: "Bot",
     techStackUsed: ["NodeJS", "MongoDB", "Git"],
     mainImageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%20Bot%2F1.png?alt=media",
@@ -229,22 +379,45 @@ export default [
 
     fullDescription: (
       <div className="projectDescription">
-        This bot was built using NodeJS, and it simply makes a request to the
-        Unsplash API every 2mins (using the node-schedule NPM package) to
-        receive data on 30 images. Why I created this bot? I created this bot to
-        solve a problem. I needed thousands of Unsplash images each time a user
-        wanted to have a “relaxation session” on my other project “CalmSlides”,
-        and the Unsplash API (in development mode) restricts the number of
-        requests I can make to 50 requests per hour (Note: in each request I can
-        retrieve data on up to 30 images maximum). Hence to solve this problem I
-        created a bot that made requests for all the image data I could need on
-        the website beforehand, and store it on MongoDB, so I would not need to
-        make an API call each time I needed the images on “CalmSlides”. The bot
-        ran for 4 days, and stored data on 92,813 images, before I shut it down
-        (temporarily). It uses the mongoose NPM package to connect to MongoDB
-        and store data in the database. During this project, I learned how to
-        store data in MongoDB by creating Schemas and Models. Key NPM Packages
-        used: node-fetch, mongoose, node-schedule, unsplash-js, dotenv
+        <p>
+          This bot was built using NodeJS, and it simply makes a request to the
+          Unsplash API every 2mins <i>(using the node-schedule NPM package)</i>{" "}
+          to receive data on 30 images.
+        </p>
+
+        <p>
+          <b>Why I created this bot?</b> I created this bot to solve a problem.
+          I needed thousands of Unsplash images each time a user wanted to have
+          a “relaxation session” on my other project “CalmSlides”, and the
+          Unsplash API <i>(in development mode)</i> restricts the number of
+          requests I can make to 50 requests per hour{" "}
+          <i>
+            (Note: in each request I can retrieve data on up to 30 images
+            maximum)
+          </i>
+          .
+        </p>
+
+        <p>
+          Hence to solve this problem I created a bot that made requests for all
+          the image data I could need on the website beforehand, and store it on
+          MongoDB, so I would not need to make an API call each time I needed
+          the images on “CalmSlides”. The bot ran for 4 days, and stored data on
+          92,813 images, before I shut it down <i>(temporarily)</i>.
+        </p>
+
+        <p>
+          It uses the mongoose NPM package to connect to MongoDB and store data
+          in the database.During this project, I learned how to store data in
+          MongoDB by creating Schemas and Models.
+        </p>
+
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          node-fetch, mongoose, node-schedule, unsplash-js, dotenv
+        </p>
       </div>
     ),
     techStackAndExplanation: [
@@ -268,6 +441,7 @@ export default [
   {
     projectID: "pens",
     name: "Pens",
+    projectType: "Mobile Application",
     techStackUsed: ["Dart", "Flutter", "Firebase", "Git"],
     mainImageUrl:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F4.png?alt=media",
@@ -285,29 +459,81 @@ export default [
 
     fullDescription: (
       <div className="projectDescription">
-        Pens is a note-taking mobile application that I made to solve the issues
-        I currently face with other note-taking applications. It is an
-        application that showcases a beautiful User Interface but is still
-        simple to use. It provides the following features to users (which are
-        not commonly found in other note-taking applications): a) The ability to
-        passcode protect selected notes, b) The ability to categorize notes into
-        separate folders, for better organization. What I learnt from this
-        project: Making this application was a fun process. Through this process
-        I picked up new skills and developed old ones. a) I improved my version
-        control skills using Git, as I had to use git commands in my terminal to
-        upload my code to Github. b) Through this project I learnt how to handle
-        state management within Flutter Applications, using the flutter_bloc
-        package. c) Through this project I gained additional knowledge on how to
-        store and retrieve data from a local database in Flutter Applications,
-        using the hive package. d) Through this project I also continued to
-        develop my skills in building exceptionally beautiful Mobile User
-        Interfaces with the Flutter Framework. e) I learnt how to use Firebase
-        Analytics to track events performed by Users within the application. Key
-        packages used: a) flutter_bloc: To handle State Management in the entire
-        application, b) hive: To handle local storage of notes, c) intl: Which
-        provide better date formatting in the application, d) path_provider, e)
-        ionicons: Giving me access to 100+ unique icons, f) firebase_core, g)
-        firebase_analytics, e.t.c.
+        <p>
+          Pens is a note-taking mobile application that I made to solve the
+          issues I currently face with other note-taking applications. It is an
+          application that showcases a beautiful User Interface but is still
+          simple to use.
+        </p>
+
+        <p>
+          It provides the following features to users{" "}
+          <i>
+            (which are not commonly found in other note-taking applications)
+          </i>
+          :
+          <ul className="list-disc list-inside">
+            <li>The ability to passcode protect selected notes</li>
+            <li>
+              The ability to categorize notes into separate folders, for better
+              organization
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          Making this application was a fun process. Through this process I
+          picked up new skills and developed old ones, such as:
+          <ul className="list-disc list-inside">
+            <li>
+              I improved my version control skills using Git, as I had to use
+              git commands in my terminal to upload my code to Github
+            </li>
+            <li>
+              Through this project I learnt how to handle state management
+              within Flutter Applications, using the flutter_bloc package
+            </li>
+            <li>
+              Through this project I gained additional knowledge on how to store
+              and retrieve data from a local database in Flutter Applications,
+              using the hive package
+            </li>
+            <li>
+              Through this project I also continued to develop my skills in
+              building exceptionally beautiful Mobile User Interfaces with the
+              Flutter Framework
+            </li>
+            <li>
+              I learnt how to use Firebase Analytics to track events performed
+              by Users within the application
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <u>
+            <b>Key packages used:</b>
+          </u>
+          <ul className="list-disc list-inside">
+            <li>
+              <b>flutter_bloc:</b> To handle State Management in the entire
+              application
+            </li>
+            <li>
+              <b>hive:</b> To handle local storage of notes
+            </li>
+            <li>
+              <b>intl:</b> Which provide better date formatting in the
+              application
+            </li>
+            <li>
+              <b>ionicons:</b> Giving me access to 100+ unique icons
+            </li>
+            <li>path_provider</li>
+            <li>firebase_core</li>
+            <li>firebase_analytics</li>
+          </ul>
+        </p>
       </div>
     ),
     techStackAndExplanation: [
