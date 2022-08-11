@@ -1,16 +1,19 @@
 import React, { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 type ProjectTilePropType = {
-  imgUrl: string;
-  name: string;
-  techStack: string[];
-  shortDescription: string;
-  githubUrl: string;
-  liveUrl: string;
+  imgUrl: string
+  projectID: string
+  name: string
+  techStack: string[]
+  shortDescription: string
+  githubUrl: string
+  liveUrl: string
 };
 
 function ProjectTile({
   imgUrl,
+  projectID,
   name,
   techStack,
   shortDescription,
@@ -32,22 +35,26 @@ function ProjectTile({
       className=" flex flex-col justify-start items-center
     max-w-[400px] sm:max-w-[450px] md:max-w-[500px] "
     >
-      <div className=" border-2 border-gray-600 p-1 rounded-md w-72 h-52 md:w-76 md:h-54 lg:w-80 lg:h-56 overflow-hidden transition ease-in-out duration-300 hover:scale-105">
-        <img
-          src={imgUrl}
-          alt=""
-          className=" min-w-full min-h-full rounded-md object-cover"
-        />
-      </div>
+      <Link to={`/projects/${projectID}`}>
+        <div className=" border-2 border-gray-600 p-1 rounded-md w-72 h-52 md:w-76 md:h-54 lg:w-80 lg:h-56 overflow-hidden transition ease-in-out duration-300 hover:scale-105">
+          <img
+            src={imgUrl}
+            alt=""
+            className=" min-w-full min-h-full rounded-md object-cover"
+          />
+        </div>
+      </Link>
 
       <div className="mt-6 flex flex-wrap justify-center items-center gap-2">
         {techStackElements}
       </div>
 
       <div className=" min-w-full flex flex-col justify-center items-center md:flex-row mt-2 md:mt-3 md:gap-5">
-        <p className="font-sans text-lg md:text-xl lg:text-2xl font-bold text-center text-black">
-          {name}
-        </p>
+        <Link to={`/projects/${projectID}`}>
+          <p className="font-sans text-lg md:text-xl lg:text-2xl font-bold text-center text-black">
+            {name}
+          </p>
+        </Link>
         <div className=" flex justify-center md:justify-end gap-2">
           {/* github url */}
 
@@ -90,21 +97,27 @@ function ProjectTile({
         {shortDescription}
       </p>
 
-      <div className=" mt-2 flex justify-start items-center gap-1 hover:underline underline-offset-2 decoration-gray-400">
-        <p className=" font-sans text-sm md:text-base font-semibold text-black">
-          READ MORE
-        </p>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-[14px] w-[14px] md:h-4 md:w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-      </div>
+      <Link to={`/projects/${projectID}`}>
+        <div className=" mt-2 flex justify-start items-center gap-1 hover:underline underline-offset-2 decoration-gray-400">
+          <p className=" font-sans text-sm md:text-base font-semibold text-black">
+            READ MORE
+          </p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-[14px] w-[14px] md:h-4 md:w-4"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </div>
+      </Link>
     </div>
   );
 }

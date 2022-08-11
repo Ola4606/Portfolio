@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
+import ProjectDisplay from "./components/projects/projectDisplay";
 
 function App() {
   return (
@@ -8,8 +9,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/projects/:name" element={<SessionMain />} />
-          <Route path="*" element={<PageNotFound />} /> */}
+          <Route path="/projects/:name" element={<ProjectDisplay />} />
+          {/* <Route path="*" element={<PageNotFound />} /> */}
         </Routes>
       </Router>
     </div>

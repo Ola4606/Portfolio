@@ -6,9 +6,9 @@ import ProjectTile from "./projectTile";
 
 function Projects() {
   const projectsElements = useMemo(() => {
-    return ProjectsData.map((i, index) => {
+    return ProjectsData.map((i) => {
       return (
-        <div key={index}>
+        <div key={i.projectID}>
           <ProjectTile
             imgUrl={i.mainImageUrl}
             name={i.name}
@@ -16,6 +16,7 @@ function Projects() {
             shortDescription={i.shortDescription}
             githubUrl={i.githubUrl}
             liveUrl={i.liveUrl}
+            projectID={i.projectID}
           />
         </div>
       );

@@ -8,3 +8,7 @@
 .socialIcons {
     @apply w-[30px] h-[30px] md:w-[35px] md:h-[35px] border-2 border-gray-400 rounded-full p-[5px] cursor-pointer
 }
+
+.projectDescription {
+    @apply mt-4
+}

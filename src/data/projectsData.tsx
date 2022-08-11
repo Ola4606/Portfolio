@@ -1,5 +1,6 @@
 export default [
   {
+    projectID: "portfolio",
     name: "My Portfolio (Laolu.dev)",
     techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
     mainImageUrl:
@@ -11,7 +12,7 @@ export default [
       "This is my personal portfolio, the website you are currently on right now! I built it all from scratch, without using any templates. I made it unique to me (and even used my custom bitmojies).",
 
     fullDescription: (
-      <div>
+      <div className="projectDescription">
         This is a project personal to me, and I wanted it to look nice. Before
         making the website, I developed my skills on CSS Grids and Flexboxes, as
         I knew I would need them throughout the website (I used flexboxes all
@@ -53,6 +54,7 @@ export default [
   },
 
   {
+    projectID: "worlds-richest",
     name: "World's Richest",
     techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
     mainImageUrl:
@@ -67,7 +69,7 @@ export default [
       "This website consumes live data on the world's richest people from an unofficial Forbes API (using the Axios npm package); and displays this data in a clean, modern, and responsive User Interface.",
 
     fullDescription: (
-      <div>
+      <div className="projectDescription">
         'World's Richest' was my first React project, and it was built using
         React and TailwindCSS. It consumes live data from this API:
         https://forbes400.herokuapp.com/api/forbes400/real-time which provides
@@ -118,6 +120,7 @@ export default [
   },
 
   {
+    projectID: "calmslides",
     name: "CalmSlides",
     techStackUsed: ["React", "TailwindCSS", "Typescript", "MongoDB", "Git"],
     mainImageUrl:
@@ -133,7 +136,7 @@ export default [
       "CalmSlides is a simple-to-use web product that makes relaxing easier. It exposes users to thousands of randomly picked Unsplash images in a sliding marquee format in a short period. CalmSlides helps users to think, relax, and tune off.",
 
     fullDescription: (
-      <div>
+      <div className="projectDescription">
         CalmSlides in basic terms is a marquee-styled slideshow of randomly
         selected images. It is powered by another project of mine called the
         “CalmSlides Bot” (this was a worker bot built with NodeJS, that ran for
@@ -213,6 +216,7 @@ export default [
   },
 
   {
+    projectID: "calmslides-bot",
     name: "CalmSlides Bot",
     techStackUsed: ["NodeJS", "MongoDB", "Git"],
     mainImageUrl:
@@ -224,7 +228,7 @@ export default [
       "This bot provides the image data needed to power my other project, called “CalmSlides”. It runs as a worker bot on Heroku making requests to the Unsplash API at regular intervals and storing this data on MongoDB.",
 
     fullDescription: (
-      <div>
+      <div className="projectDescription">
         This bot was built using NodeJS, and it simply makes a request to the
         Unsplash API every 2mins (using the node-schedule NPM package) to
         receive data on 30 images. Why I created this bot? I created this bot to
@@ -262,6 +266,7 @@ export default [
   },
 
   {
+    projectID: "pens",
     name: "Pens",
     techStackUsed: ["Dart", "Flutter", "Firebase", "Git"],
     mainImageUrl:
@@ -279,7 +284,7 @@ export default [
       "Pens is a note-taking mobile application that I made to solve the issues I currently face with other note-taking applications. It is an application that showcases a beautiful User Interface but is still simple to use.",
 
     fullDescription: (
-      <div>
+      <div className="projectDescription">
         Pens is a note-taking mobile application that I made to solve the issues
         I currently face with other note-taking applications. It is an
         application that showcases a beautiful User Interface but is still
