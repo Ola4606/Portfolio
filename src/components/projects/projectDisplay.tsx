@@ -93,7 +93,7 @@ function ProjectDisplay() {
               rel="noopener noreferrer"
               className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
             >
-              {projectData.liveUrl}
+              {projectData.liveUrl.substring(8)}
             </a>
           </div>
         )}
@@ -109,7 +109,7 @@ function ProjectDisplay() {
               rel="noopener noreferrer"
               className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
             >
-              {projectData.githubUrl}
+              {projectData.githubUrl.substring(8)}
             </a>
           </div>
         )}
