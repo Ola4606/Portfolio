@@ -94,8 +94,6 @@ export default [
     allImagesUrl: [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F1.png?alt=media",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F2.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F3.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Worlds%20Richest%2F4.png?alt=media",
     ],
     shortDescription:
       "This website consumes live data on the world's richest people from an unofficial Forbes API (using the Axios npm package); and displays this data in a clean, modern, and responsive User Interface.",
