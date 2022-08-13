@@ -637,10 +637,6 @@ video {
   width: 14px;
 }
 
-.w-60{
-  width: 15rem;
-}
-
 .min-w-\[100px\]{
   min-width: 100px;
 }
@@ -655,10 +651,6 @@ video {
 
 .max-w-\[400px\]{
   max-width: 400px;
-}
-
-.max-w-\[240px\]{
-  max-width: 240px;
 }
 
 .max-w-full{
@@ -748,6 +740,14 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.text-ellipsis{
+  text-overflow: ellipsis;
+}
+
+.break-words{
+  overflow-wrap: break-word;
 }
 
 .rounded-sm{
@@ -862,16 +862,21 @@ video {
   text-align: right;
 }
 
-.font-logo{
-  font-family: Pacifico;
-}
-
 .font-sans{
   font-family: Be Vietnam Pro, Inter, system-ui, sans;
 }
 
+.font-logo{
+  font-family: Pacifico;
+}
+
 .font-monospace{
   font-family: DM Mono, monospace;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-xs{
@@ -894,9 +899,8 @@ video {
   line-height: 1.75rem;
 }
 
-.text-base{
-  font-size: 1rem;
-  line-height: 1.5rem;
+.font-light{
+  font-weight: 300;
 }
 
 .font-semibold{
@@ -919,8 +923,9 @@ video {
   font-weight: 500;
 }
 
-.font-light{
-  font-weight: 300;
+.text-gray-700{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -936,11 +941,6 @@ video {
 .text-gray-600{
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-gray-700{
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-900{
@@ -1140,20 +1140,12 @@ video {
     width: 1rem;
   }
 
-  .md\:w-64{
-    width: 16rem;
-  }
-
   .md\:min-w-\[256px\]{
     min-width: 256px;
   }
 
   .md\:max-w-\[500px\]{
     max-width: 500px;
-  }
-
-  .md\:max-w-\[256px\]{
-    max-width: 256px;
   }
 
   .md\:grid-cols-2{
@@ -1197,6 +1189,11 @@ video {
     padding-top: 3.5rem;
   }
 
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1205,11 +1202,6 @@ video {
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .md\:text-xl{
@@ -1227,20 +1219,12 @@ video {
     width: 20rem;
   }
 
-  .lg\:w-72{
-    width: 18rem;
-  }
-
   .lg\:min-w-\[288px\]{
     min-width: 288px;
   }
 
   .lg\:max-w-\[650px\]{
     max-width: 650px;
-  }
-
-  .lg\:max-w-\[288px\]{
-    max-width: 288px;
   }
 
   .lg\:gap-y-9{
@@ -1256,6 +1240,11 @@ video {
     background-position: left;
   }
 
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1264,11 +1253,6 @@ video {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }
 

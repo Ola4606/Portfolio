@@ -50,6 +50,13 @@ export default [
             <li>Using SVGs in React, etc.</li>
           </ul>
         </p>
+
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          react-router-dom
+        </p>
       </div>
     ),
     techStackAndExplanation: [
@@ -70,7 +77,7 @@ export default [
       },
       {
         techName: "Git",
-        techUsage: "I used Git to ensure version control.",
+        techUsage: "I used Git for version control.",
       },
     ],
     githubUrl: "https://github.com/Ola4606/Portfolio",
@@ -103,7 +110,7 @@ export default [
           href="https://forbes400.herokuapp.com/api/forbes400/real-time"
           className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 underline underline-offset-2 decoration-gray-400"
         >
-          https://forbes400.herokuapp.com/api/forbes400/real-time
+          API Link
         </a>
 
         <p>
@@ -175,7 +182,7 @@ export default [
       },
       {
         techName: "Git",
-        techUsage: "I used Git to ensure version control.",
+        techUsage: "I used Git for version control.",
       },
     ],
     githubUrl: "https://github.com/Ola4606/Worlds-richest",
@@ -192,12 +199,10 @@ export default [
     allImagesUrl: [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%2F1.png?alt=media",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%2F2.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%2F3.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%2F4.png?alt=media",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%2F5.png?alt=media",
     ],
     shortDescription:
-      "CalmSlides is a simple-to-use web product that makes relaxing easier. It exposes users to thousands of randomly picked Unsplash images in a sliding marquee format in a short period. CalmSlides helps users to think, relax, and tune off.",
+      "CalmSlides is a simple-to-use web product that makes relaxation easier. It exposes users to thousands of randomly picked Unsplash images in a sliding marquee format in a short period. CalmSlides helps users to think, relax, and tune off.",
 
     fullDescription: (
       <div className="projectDescription">
@@ -357,7 +362,7 @@ export default [
       },
       {
         techName: "Git",
-        techUsage: "I used Git to ensure version control.",
+        techUsage: "I used Git for version control.",
       },
     ],
     githubUrl: "https://github.com/Ola4606/Calm-Slides-Website",
@@ -431,7 +436,7 @@ export default [
       },
       {
         techName: "Git",
-        techUsage: "I used Git to ensure version control.",
+        techUsage: "I used Git for version control.",
       },
     ],
     githubUrl: "https://github.com/Ola4606/Calm-Slides-Bot",
@@ -462,7 +467,7 @@ export default [
         <p>
           Pens is a note-taking mobile application that I made to solve the
           issues I currently face with other note-taking applications. It is an
-          application that showcases a beautiful User Interface but is still
+          application that showcases a beautiful User Interface and is still
           simple to use.
         </p>
 
@@ -543,7 +548,7 @@ export default [
       },
       {
         techName: "Git",
-        techUsage: "I used Git to ensure version control.",
+        techUsage: "I used Git for version control.",
       },
     ],
     githubUrl: "",
