@@ -1,4 +1,6 @@
-export default [
+import { Link } from "react-router-dom";
+
+const projectsData = [
   {
     projectID: "portfolio",
     name: "My Portfolio (Laolu.dev)",
@@ -106,6 +108,8 @@ export default [
         </p>
         <a
           href="https://forbes400.herokuapp.com/api/forbes400/real-time"
+          target="_blank"
+          rel="noopener noreferrer"
           className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 underline underline-offset-2 decoration-gray-400"
         >
           API Link
@@ -210,7 +214,16 @@ export default [
         </p>
 
         <p>
-          It is powered by another project of mine called the “CalmSlides Bot”{" "}
+          It is powered by another project of mine called the “
+          {
+            <Link
+              to="/projects/calmslides-bot"
+              className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
+            >
+              CalmSlides Bot
+            </Link>
+          }
+          ”{" "}
           <i>
             (this was a worker bot built with NodeJS, that ran for 4 days, and
             stored the metadata of about 100,000 Unsplash images | which was all
@@ -391,9 +404,17 @@ export default [
         <p>
           <b>Why I created this bot?</b> I created this bot to solve a problem.
           I needed thousands of Unsplash images each time a user wanted to have
-          a “relaxation session” on my other project “CalmSlides”, and the
-          Unsplash API <i>(in development mode)</i> restricts the number of
-          requests I can make to 50 requests per hour{" "}
+          a “relaxation session” on my other project “
+          {
+            <Link
+              to="/projects/calmslides"
+              className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
+            >
+              CalmSlides
+            </Link>
+          }
+          ”, and the Unsplash API <i>(in development mode)</i> restricts the
+          number of requests I can make to 50 requests per hour{" "}
           <i>
             (Note: in each request I can retrieve data on up to 30 images
             maximum)
@@ -405,8 +426,17 @@ export default [
           Hence to solve this problem I created a bot that made requests for all
           the image data I could need on the website beforehand, and store it on
           MongoDB, so I would not need to make an API call each time I needed
-          the images on “CalmSlides”. The bot ran for 4 days, and stored data on
-          92,813 images, before I shut it down <i>(temporarily)</i>.
+          the images on “
+          {
+            <Link
+              to="/projects/calmslides"
+              className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
+            >
+              CalmSlides
+            </Link>
+          }
+          ”. The bot ran for 4 days, and stored data on 92,813 images, before I
+          shut it down <i>(temporarily)</i>.
         </p>
 
         <p>
@@ -553,3 +583,5 @@ export default [
     liveUrl: "https://play.google.com/store/apps/details?id=com.olacode.pens",
   },
 ];
+
+export default projectsData;

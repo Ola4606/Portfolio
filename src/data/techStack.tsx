@@ -10,61 +10,63 @@ import MongoLogo from '../images/logos/mongodb-icon.svg'
 import FirebaseLogo from '../images/logos/firebase-plain.svg'
 import GitLogo from '../images/logos/git-original.svg'
 
-export default [ //data of my tech stack. Programming Languages and Technologies
+const teckStackData = [ //data of my tech stack. Programming Languages and Technologies
 
-    {
-      name: "HTML5",
-      logoUrl: HtmlLogo
-    },
+{
+  name: "HTML5",
+  logoUrl: HtmlLogo
+},
 
-    {
-        name: "CSS3",
-        logoUrl: CssLogo
-    },
+{
+    name: "CSS3",
+    logoUrl: CssLogo
+},
 
-    {
-        name: "Javascript",
-        logoUrl: JavascriptLogo
-    },
+{
+    name: "Javascript",
+    logoUrl: JavascriptLogo
+},
 
-    {
-        name: "Typescript",
-        logoUrl: TypescriptLogo
-    },
+{
+    name: "Typescript",
+    logoUrl: TypescriptLogo
+},
 
-    {
-        name: "React",
-        logoUrl: ReactLogo
-    },
+{
+    name: "React",
+    logoUrl: ReactLogo
+},
 
-    {
-        name: "TailwindCSS",
-        logoUrl: TailwindLogo
-    },
+{
+    name: "TailwindCSS",
+    logoUrl: TailwindLogo
+},
 
-    {
-        name: "Flutter",
-        logoUrl: FlutterLogo
-    },
+{
+    name: "Flutter",
+    logoUrl: FlutterLogo
+},
 
-    {
-        name: "NodeJS",
-        logoUrl: NodeLogo
-    },
+{
+    name: "NodeJS",
+    logoUrl: NodeLogo
+},
 
-    {
-        name: "MongoDB",
-        logoUrl: MongoLogo
-    },
+{
+    name: "MongoDB",
+    logoUrl: MongoLogo
+},
 
-    {
-        name: "Firebase",
-        logoUrl: FirebaseLogo
-    },
+{
+    name: "Firebase",
+    logoUrl: FirebaseLogo
+},
 
-    {
-        name: "Git",
-        logoUrl: GitLogo
-    },
+{
+    name: "Git",
+    logoUrl: GitLogo
+},
 
 ];
+
+export default teckStackData;

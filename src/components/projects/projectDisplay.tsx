@@ -52,7 +52,11 @@ function ProjectDisplay() {
           key={index}
           className=" overflow-hidden border-2 border-gray-600 p-1 rounded-md min-w-[240px] md:min-w-[256px] lg:min-w-[288px]"
         >
-          <img src={i} alt="" className=" rounded-md min-w-full max-w-full h-auto" />
+          <img
+            src={i}
+            alt=""
+            className=" rounded-md min-w-full max-w-full h-auto"
+          />
         </div>
       );
     });
@@ -85,6 +89,8 @@ function ProjectDisplay() {
             </p>
             <a
               href={projectData.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
             >
               {projectData.liveUrl}
@@ -99,6 +105,8 @@ function ProjectDisplay() {
             </p>
             <a
               href={projectData.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className=" font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
             >
               {projectData.githubUrl}
