@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/general/scrollToTop";
 import Home from "./components/home/home";
+import PageNotFound from "./components/notFound/pageNotFound";
 import ProjectDisplay from "./components/projects/projectDisplay";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects/:name" element={<ProjectDisplay />} />
-          {/* <Route path="*" element={<PageNotFound />} /> */}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Router>
     </div>
