@@ -8,7 +8,7 @@ function Intro() {
       className="bg-main bg-right-bottom md:bg-right bg-no-repeat"
       style={{ backgroundImage: `url(${waveImage})` }}
     >
-      <div className="bg-white/[.30] sm:bg-transparent">
+      <div className="bg-white/[.50] sm:bg-transparent">
         <div className="p-5 md:p-7 md:pt-14">
           <div className=" min-h-[200px] xsm:max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:max-w-[750px] flex flex-col justify-center">
             <p className="font-sans text-lg md:text-xl lg:text-2xl font-semibold text-left text-gray-700">

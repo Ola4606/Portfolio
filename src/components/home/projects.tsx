@@ -28,7 +28,7 @@ function Projects() {
       className="bg-white bg-left-top lg:bg-left bg-no-repeat"
       style={{ backgroundImage: `url(${pointingImage})` }}
     >
-      <div className="bg-white/[.30] sm:bg-transparent">
+      <div className="bg-white/[.50] sm:bg-transparent">
         <div className=" p-5 md:p-7 md:pt-14 flex justify-center">
           <div className=" flex flex-col justify-center items-center">
             <div className="min-h-[200px] xsm:max-w-[350px] sm:max-w-[450px] md:max-w-[500px] lg:max-w-[650px] xl:max-w-[750px]">

@@ -6,7 +6,7 @@ import Button from "../general/button";
 function PageNotFound() {
   return (
     <div className="bg-main min-h-[100vh]">
-      <div className="bg-white/[.30] sm:bg-transparent">
+      <div className="bg-white/[.50] sm:bg-transparent">
         <div className="flex flex-col justify-center items-center min-h-[100vh] p-5 md:p-7">
           <img src={errorImage} alt="" />
 
