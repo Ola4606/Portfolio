@@ -87,6 +87,82 @@ const projectsData = [
   },
 
   {
+    projectID: "tsc-agugu",
+    name: "The Stone Church, Agugu",
+    projectType: "Website",
+    techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/The%20Stone%20Church%20Agugu%2F1.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/The%20Stone%20Church%20Agugu%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/The%20Stone%20Church%20Agugu%2F2.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/The%20Stone%20Church%20Agugu%2F3.png?alt=media",
+    ],
+    shortDescription:
+      "This is a website I made for a growing church in Nigeria. It is a simple 4-page website, that displays information about the church.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          This is a website I made for a growing church in Nigeria. It is a
+          simple 4-page website, that displays information about the church. I
+          made this website in 4 days as a remote freelancing gig. It was meant
+          to just be a simple website with rectangular images and a plain font,
+          but I took it a step further and customized the images I was given
+          into different shapes and sizes on Canva, I also picked out a livelier
+          font on Google Fonts for the website. The clients appreciated the
+          website, but it is still yet to be released to the public for use.
+        </p>
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, laptop, and larger screens.
+        </p>
+
+        <p>
+          While building this website, I was able to improve my skills on some
+          React principles and concepts, such as:
+          <ul className="list-disc list-inside">
+            <li>Using React Memo</li>
+            <li>Passing and receiving props</li>
+            <li>Using custom fonts in React, etc.</li>
+          </ul>
+        </p>
+
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          react-router-dom
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "React",
+        techUsage:
+          "The entire website was built on the Javascript Library: React.",
+      },
+      {
+        techName: "TailwindCSS",
+        techUsage:
+          "Instead of regular vanilla CSS, I used the CSS Framework: TailwindCSS, to reduce the development time and create cleaner User Interfaces.",
+      },
+      {
+        techName: "Typescript",
+        techUsage:
+          "I used Typescript to add type control to Javascript variables and React Component Props, to reduce the likelihood of running into bugs caused by type errors.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "https://github.com/Ola4606/tsc-agugu",
+    liveUrl: "https://tsc-agugu.netlify.app/",
+  },
+
+  {
     projectID: "worlds-richest",
     name: "World's Richest",
     projectType: "Website",
