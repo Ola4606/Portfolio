@@ -87,6 +87,102 @@ const projectsData = [
   },
 
   {
+    projectID: "iaoe",
+    name: "iaoe",
+    projectType: "Website and AI",
+    techStackUsed: ["React", "TailwindCSS", "Typescript", "Firebase", "Git"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
+    ],
+    shortDescription:
+      "This project is a combination of a website and AI I made. I took the simple game of Tic Tac Toe and decided to make an unbeatable version, by creating some Artificial Intelligence that considers the player’s ever move and prevents him/her from winning.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          This project is a combination of a website and AI I made. I took the
+          simple game of Tic Tac Toe and decided to make an unbeatable version,
+          by creating some Artificial Intelligence that considers the player’s
+          ever move and prevents him/her from winning.
+        </p>
+
+        <p>
+          I got the idea for this project a while back, I thought it would be
+          cool to make a simple game such as Tic Tac Toe unbeatable, hence I
+          challenged my self to do something I had never done before; I made an
+          AI.
+        </p>
+
+        <p>
+          The AI is called “iaoe”. I built it using Typescript in about 12 hours
+          total. It is based on an article I read on how to never lose a game of
+          Tic Tac Toe.
+        </p>
+
+        <p>
+          I also used Firebase Firestore to make a counter for the total number
+          of attempts made to beat the AI, every time a player tries to beat the
+          game, I send a request to Firebase to update the document where the
+          counter number is saved.
+        </p>
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, laptop, and larger screens.
+        </p>
+
+        <p>
+          While building this website, I was able to improve my skills on some
+          React principles and concepts, such as:
+          <ul className="list-disc list-inside">
+            <li>Using React Memo</li>
+            <li>Passing and receiving props</li>
+            <li>Using custom fonts in React, etc.</li>
+          </ul>
+        </p>
+
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          react-router-dom, firebase
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "React",
+        techUsage:
+          "The entire website was built on the Javascript Library: React.",
+      },
+      {
+        techName: "TailwindCSS",
+        techUsage:
+          "Instead of regular vanilla CSS, I used the CSS Framework: TailwindCSS, to reduce the development time and create cleaner User Interfaces.",
+      },
+      {
+        techName: "Typescript",
+        techUsage:
+          "I used Typescript to add type control to Javascript variables and React Component Props, to reduce the likelihood of running into bugs caused by type errors.",
+      },
+
+      {
+        techName: "Firebase",
+        techUsage:
+          "I used Firebase Firestore to make a counter for the total number of attempts made to beat the AI, every time a player tries to beat the game, I send a request to Firebase to update the document where the counter number is saved.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "",
+    liveUrl: "https://iaoe.netlify.app/",
+  },
+
+  {
     projectID: "tsc-agugu",
     name: "The Stone Church, Agugu",
     projectType: "Website",
