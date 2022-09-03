@@ -97,7 +97,7 @@ const projectsData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
     ],
     shortDescription:
-      "This project is a combination of a website and AI I made. I took the simple game of Tic Tac Toe and decided to make an unbeatable version, by creating some Artificial Intelligence that considers the player’s ever move and prevents him/her from winning.",
+      "This project is a combination of a website and AI I made. I took the simple game of Tic Tac Toe and decided to make an unbeatable version, by creating some Artificial Intelligence that considers the player’s every move and prevents him/her from winning.",
 
     fullDescription: (
       <div className="projectDescription">
@@ -105,7 +105,7 @@ const projectsData = [
           This project is a combination of a website and AI I made. I took the
           simple game of Tic Tac Toe and decided to make an unbeatable version,
           by creating some Artificial Intelligence that considers the player’s
-          ever move and prevents him/her from winning.
+          every move and prevents him/her from winning.
         </p>
 
         <p>
