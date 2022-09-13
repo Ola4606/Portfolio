@@ -87,6 +87,114 @@ const projectsData = [
   },
 
   {
+    projectID: "pens",
+    name: "Pens",
+    projectType: "Mobile Application",
+    techStackUsed: ["Dart", "Flutter", "Firebase", "Git"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F16.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F16.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F18.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F24.png?alt=media"
+    ],
+    shortDescription:
+      "Pens is a note-taking mobile application that I made to solve the issues I currently face with other note-taking applications. It is an application that showcases a beautiful User Interface but is still simple to use.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          Pens is a note-taking mobile application that I made to solve the
+          issues I currently face with other note-taking applications. It is an
+          application that showcases a beautiful User Interface and is still
+          simple to use.
+        </p>
+
+        <p>
+          It provides the following features to users{" "}
+          <i>
+            (which are not commonly found in other note-taking applications)
+          </i>
+          :
+          <ul className="list-disc list-inside">
+            <li>The ability to passcode protect selected notes</li>
+            <li>
+              The ability to categorize notes into separate folders, for better
+              organization
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          Making this application was a fun process. Through this process I
+          picked up new skills and developed old ones, such as:
+          <ul className="list-disc list-inside">
+            <li>
+              I improved my version control skills using Git, as I had to use
+              git commands in my terminal to upload my code to Github
+            </li>
+            <li>
+              Through this project I learnt how to handle state management
+              within Flutter Applications, using the flutter_bloc package
+            </li>
+            <li>
+              Through this project I gained additional knowledge on how to store
+              and retrieve data from a local database in Flutter Applications,
+              using the hive package
+            </li>
+            <li>
+              Through this project I also continued to develop my skills in
+              building exceptionally beautiful Mobile User Interfaces with the
+              Flutter Framework
+            </li>
+            <li>
+              I learnt how to use Firebase Analytics to track events performed
+              by Users within the application
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <u>
+            <b>Key packages used:</b>
+          </u>
+          <ul className="list-disc list-inside">
+            <li>
+              <b>flutter_bloc:</b> To handle State Management in the entire
+              application
+            </li>
+            <li>
+              <b>hive:</b> To handle local storage of notes
+            </li>
+            <li>
+              <b>intl:</b> Which provide better date formatting in the
+              application
+            </li>
+            <li>
+              <b>ionicons:</b> Giving me access to 100+ unique icons
+            </li>
+            <li>path_provider</li>
+            <li>firebase_core</li>
+            <li>firebase_analytics</li>
+          </ul>
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "Flutter",
+        techUsage: "The framework used to build this mobile application.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "",
+    liveUrl: "https://play.google.com/store/apps/details?id=com.olacode.pens",
+  },
+
+  {
     projectID: "iaoe",
     name: "iaoe",
     projectType: "Website and AI",
@@ -643,117 +751,7 @@ const projectsData = [
     liveUrl: "",
   },
 
-  {
-    projectID: "pens",
-    name: "Pens",
-    projectType: "Mobile Application",
-    techStackUsed: ["Dart", "Flutter", "Firebase", "Git"],
-    mainImageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F4.png?alt=media",
-    allImagesUrl: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F4.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F5.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F6.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F9.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F11.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F12.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F13.png?alt=media",
-    ],
-    shortDescription:
-      "Pens is a note-taking mobile application that I made to solve the issues I currently face with other note-taking applications. It is an application that showcases a beautiful User Interface but is still simple to use.",
-
-    fullDescription: (
-      <div className="projectDescription">
-        <p>
-          Pens is a note-taking mobile application that I made to solve the
-          issues I currently face with other note-taking applications. It is an
-          application that showcases a beautiful User Interface and is still
-          simple to use.
-        </p>
-
-        <p>
-          It provides the following features to users{" "}
-          <i>
-            (which are not commonly found in other note-taking applications)
-          </i>
-          :
-          <ul className="list-disc list-inside">
-            <li>The ability to passcode protect selected notes</li>
-            <li>
-              The ability to categorize notes into separate folders, for better
-              organization
-            </li>
-          </ul>
-        </p>
-
-        <p>
-          Making this application was a fun process. Through this process I
-          picked up new skills and developed old ones, such as:
-          <ul className="list-disc list-inside">
-            <li>
-              I improved my version control skills using Git, as I had to use
-              git commands in my terminal to upload my code to Github
-            </li>
-            <li>
-              Through this project I learnt how to handle state management
-              within Flutter Applications, using the flutter_bloc package
-            </li>
-            <li>
-              Through this project I gained additional knowledge on how to store
-              and retrieve data from a local database in Flutter Applications,
-              using the hive package
-            </li>
-            <li>
-              Through this project I also continued to develop my skills in
-              building exceptionally beautiful Mobile User Interfaces with the
-              Flutter Framework
-            </li>
-            <li>
-              I learnt how to use Firebase Analytics to track events performed
-              by Users within the application
-            </li>
-          </ul>
-        </p>
-
-        <p>
-          <u>
-            <b>Key packages used:</b>
-          </u>
-          <ul className="list-disc list-inside">
-            <li>
-              <b>flutter_bloc:</b> To handle State Management in the entire
-              application
-            </li>
-            <li>
-              <b>hive:</b> To handle local storage of notes
-            </li>
-            <li>
-              <b>intl:</b> Which provide better date formatting in the
-              application
-            </li>
-            <li>
-              <b>ionicons:</b> Giving me access to 100+ unique icons
-            </li>
-            <li>path_provider</li>
-            <li>firebase_core</li>
-            <li>firebase_analytics</li>
-          </ul>
-        </p>
-      </div>
-    ),
-    techStackAndExplanation: [
-      {
-        techName: "Flutter",
-        techUsage: "The framework used to build this mobile application.",
-      },
-      {
-        techName: "Git",
-        techUsage: "I used Git for version control.",
-      },
-    ],
-    githubUrl: "",
-    liveUrl: "https://play.google.com/store/apps/details?id=com.olacode.pens",
-  },
+  
 ];
 
 export default projectsData;
