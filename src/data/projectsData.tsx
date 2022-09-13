@@ -1,55 +1,61 @@
 import { Link } from "react-router-dom";
 
 const projectsData = [
+
   {
-    projectID: "portfolio",
-    name: "My Portfolio (Laolu.dev)",
-    projectType: "Website",
-    techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
+    projectID: "iaoe",
+    name: "iaoe",
+    projectType: "Website and AI",
+    techStackUsed: ["React", "TailwindCSS", "Typescript", "Firebase", "Git"],
     mainImageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Portfolio%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
     allImagesUrl: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Portfolio%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
     ],
     shortDescription:
-      "This is my personal portfolio, the website you are currently on right now! I built it all from scratch, without using any templates. I made it unique to me (and even used my custom bitmojies).",
+      "This project is a combination of a website and AI I made. I took the simple game of Tic Tac Toe and decided to make an unbeatable version, by creating some Artificial Intelligence that considers the player’s every move and prevents him/her from winning.",
 
     fullDescription: (
       <div className="projectDescription">
         <p>
-          This was a project personal to me, and I wanted it to look nice.
-          Before making the website, I developed my skills on CSS Grids and
-          Flexboxes, as I knew I would need them throughout the website{" "}
-          <i>
-            (I used flexboxes all through the website, and I used responsive
-            grids, particularly in the projects section)
-          </i>
-          .
+          This project is a combination of a website and AI I made. I took the
+          simple game of Tic Tac Toe and decided to make an unbeatable version,
+          by creating some Artificial Intelligence that considers the player’s
+          every move and prevents him/her from winning.
         </p>
 
         <p>
-          I made the website fully unique to me, and I used my brand colors all
-          through. As a web developer, I believe it is important to show my
-          skills through my portfolio{" "}
-          <i>(by building it myself from the ground up)</i>, and that is exactly
-          what I have done.
+          I got the idea for this project a while back, I thought it would be
+          cool to make a simple game such as Tic Tac Toe unbeatable, hence I
+          challenged my self to do something I had never done before; I made an
+          AI.
+        </p>
+
+        <p>
+          The AI is called “iaoe”. I built it using Typescript in about 12 hours
+          total. It is based on an article I read on how to never lose a game of
+          Tic Tac Toe.
+        </p>
+
+        <p>
+          I also used Firebase Firestore to make a counter for the total number
+          of attempts made to beat the AI, every time a player tries to beat the
+          game, I send a request to Firebase to update the document where the
+          counter number is saved.
         </p>
 
         <p>
           Using TailwindCSS breakpoints, I was able to make it fully responsive
-          for mobile, tablet, and laptop screens.
+          for mobile, tablet, laptop, and larger screens.
         </p>
 
         <p>
           While building this website, I was able to improve my skills on some
           React principles and concepts, such as:
           <ul className="list-disc list-inside">
-            <li>
-              Using React Hooks <i>(namely useState, and useEffect)</i>
-            </li>
             <li>Using React Memo</li>
             <li>Passing and receiving props</li>
-            <li>Using SVGs in React, etc.</li>
+            <li>Using custom fonts in React, etc.</li>
           </ul>
         </p>
 
@@ -57,7 +63,7 @@ const projectsData = [
           <u>
             <b>Key NPM Packages used:</b>
           </u>{" "}
-          react-router-dom
+          react-router-dom, firebase
         </p>
       </div>
     ),
@@ -77,13 +83,19 @@ const projectsData = [
         techUsage:
           "I used Typescript to add type control to Javascript variables and React Component Props, to reduce the likelihood of running into bugs caused by type errors.",
       },
+
+      {
+        techName: "Firebase",
+        techUsage:
+          "I used Firebase Firestore to make a counter for the total number of attempts made to beat the AI, every time a player tries to beat the game, I send a request to Firebase to update the document where the counter number is saved.",
+      },
       {
         techName: "Git",
         techUsage: "I used Git for version control.",
       },
     ],
-    githubUrl: "https://github.com/Ola4606/Portfolio",
-    liveUrl: "https://laolu.netlify.app/",
+    githubUrl: "",
+    liveUrl: "https://iaoe.netlify.app/",
   },
 
   {
@@ -195,59 +207,54 @@ const projectsData = [
   },
 
   {
-    projectID: "iaoe",
-    name: "iaoe",
-    projectType: "Website and AI",
-    techStackUsed: ["React", "TailwindCSS", "Typescript", "Firebase", "Git"],
+    projectID: "portfolio",
+    name: "My Portfolio (Laolu.dev)",
+    projectType: "Website",
+    techStackUsed: ["React", "TailwindCSS", "Typescript", "Git"],
     mainImageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Portfolio%2F1.png?alt=media",
     allImagesUrl: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/iaoe%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Portfolio%2F1.png?alt=media",
     ],
     shortDescription:
-      "This project is a combination of a website and AI I made. I took the simple game of Tic Tac Toe and decided to make an unbeatable version, by creating some Artificial Intelligence that considers the player’s every move and prevents him/her from winning.",
+      "This is my personal portfolio, the website you are currently on right now! I built it all from scratch, without using any templates. I made it unique to me (and even used my custom bitmojies).",
 
     fullDescription: (
       <div className="projectDescription">
         <p>
-          This project is a combination of a website and AI I made. I took the
-          simple game of Tic Tac Toe and decided to make an unbeatable version,
-          by creating some Artificial Intelligence that considers the player’s
-          every move and prevents him/her from winning.
+          This was a project personal to me, and I wanted it to look nice.
+          Before making the website, I developed my skills on CSS Grids and
+          Flexboxes, as I knew I would need them throughout the website{" "}
+          <i>
+            (I used flexboxes all through the website, and I used responsive
+            grids, particularly in the projects section)
+          </i>
+          .
         </p>
 
         <p>
-          I got the idea for this project a while back, I thought it would be
-          cool to make a simple game such as Tic Tac Toe unbeatable, hence I
-          challenged my self to do something I had never done before; I made an
-          AI.
-        </p>
-
-        <p>
-          The AI is called “iaoe”. I built it using Typescript in about 12 hours
-          total. It is based on an article I read on how to never lose a game of
-          Tic Tac Toe.
-        </p>
-
-        <p>
-          I also used Firebase Firestore to make a counter for the total number
-          of attempts made to beat the AI, every time a player tries to beat the
-          game, I send a request to Firebase to update the document where the
-          counter number is saved.
+          I made the website fully unique to me, and I used my brand colors all
+          through. As a web developer, I believe it is important to show my
+          skills through my portfolio{" "}
+          <i>(by building it myself from the ground up)</i>, and that is exactly
+          what I have done.
         </p>
 
         <p>
           Using TailwindCSS breakpoints, I was able to make it fully responsive
-          for mobile, tablet, laptop, and larger screens.
+          for mobile, tablet, and laptop screens.
         </p>
 
         <p>
           While building this website, I was able to improve my skills on some
           React principles and concepts, such as:
           <ul className="list-disc list-inside">
+            <li>
+              Using React Hooks <i>(namely useState, and useEffect)</i>
+            </li>
             <li>Using React Memo</li>
             <li>Passing and receiving props</li>
-            <li>Using custom fonts in React, etc.</li>
+            <li>Using SVGs in React, etc.</li>
           </ul>
         </p>
 
@@ -255,7 +262,7 @@ const projectsData = [
           <u>
             <b>Key NPM Packages used:</b>
           </u>{" "}
-          react-router-dom, firebase
+          react-router-dom
         </p>
       </div>
     ),
@@ -275,21 +282,16 @@ const projectsData = [
         techUsage:
           "I used Typescript to add type control to Javascript variables and React Component Props, to reduce the likelihood of running into bugs caused by type errors.",
       },
-
-      {
-        techName: "Firebase",
-        techUsage:
-          "I used Firebase Firestore to make a counter for the total number of attempts made to beat the AI, every time a player tries to beat the game, I send a request to Firebase to update the document where the counter number is saved.",
-      },
       {
         techName: "Git",
         techUsage: "I used Git for version control.",
       },
     ],
-    githubUrl: "",
-    liveUrl: "https://iaoe.netlify.app/",
+    githubUrl: "https://github.com/Ola4606/Portfolio",
+    liveUrl: "https://laolu.netlify.app/",
   },
 
+  
   {
     projectID: "tsc-agugu",
     name: "The Stone Church, Agugu",
