@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-const projectsData = [
-
+export const PersonalProjectsData = [
   {
     projectID: "iaoe",
     name: "iaoe",
@@ -108,7 +107,7 @@ const projectsData = [
     allImagesUrl: [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F16.png?alt=media",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F18.png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F24.png?alt=media"
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Pens%2F24.png?alt=media",
     ],
     shortDescription:
       "Pens is a note-taking mobile application that I made to solve the issues I currently face with other note-taking applications. It is an application that showcases a beautiful User Interface but is still simple to use.",
@@ -291,7 +290,6 @@ const projectsData = [
     liveUrl: "https://laolu.netlify.app/",
   },
 
-  
   {
     projectID: "tsc-agugu",
     name: "The Stone Church, Agugu",
@@ -365,7 +363,7 @@ const projectsData = [
       },
     ],
     githubUrl: "https://github.com/Ola4606/tsc-agugu",
-    liveUrl: "https://tsc-agugu.netlify.app/",
+    liveUrl: "https://www.thestonechurchagugu.org.ng/",
   },
 
   {
@@ -752,8 +750,128 @@ const projectsData = [
     githubUrl: "https://github.com/Ola4606/Calm-Slides-Bot",
     liveUrl: "",
   },
-
-  
 ];
 
-export default projectsData;
+export const FreelanceProjectsData = [
+  {
+    projectID: "linear-app",
+    name: "Linear App Clone",
+    projectType: "Website",
+    techStackUsed: ["React", "TailwindCSS", "Git"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Linear%20App%20Clone%2F1.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Linear%20App%20Clone%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Linear%20App%20Clone%2F2.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Linear%20App%20Clone%2F3.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Linear%20App%20Clone%2F4.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Linear%20App%20Clone%2F5.png?alt=media",
+    ],
+    shortDescription:
+      'I was tasked with cloning "https://linear.app/releases/2022" in one week, and here is what I came up with.',
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          I was tasked with cloning&nbsp;
+          <a
+            href="https://linear.app/releases/2022"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
+          >
+            https://linear.app/releases/2022
+          </a>
+          &nbsp;in one week, and here is what I came up with.
+        </p>
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, laptop, and larger screens.
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "React",
+        techUsage:
+          "The entire website was built on the Javascript Library: React.",
+      },
+      {
+        techName: "TailwindCSS",
+        techUsage:
+          "Instead of regular vanilla CSS, I used the CSS Framework: TailwindCSS, to reduce the development time and create cleaner User Interfaces.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "https://github.com/Ola4606/Linear-App-Clone",
+    liveUrl: "https://peaceful-gumption-f414c9.netlify.app/",
+  },
+
+  {
+    projectID: "joes-agency",
+    name: "Joe's Agency",
+    projectType: "Website",
+    techStackUsed: ["React", "TailwindCSS", "Git"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Agency%20Website%2F1.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Agency%20Website%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Agency%20Website%2F2.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Agency%20Website%2F3.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Agency%20Website%2F4.png?alt=media",
+    ],
+    shortDescription:
+      "I was tasked with creating a simple website for a software agency, and here is what I came up with.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          I was tasked with creating a simple website for a software agency, and
+          here is what I came up with.
+        </p>
+
+        <p>
+          This was the first project that required me to use a pre-built React
+          component, I used the Material User Interface (MUI) package to create
+          the Accordion component that shows the kinds of projects the software
+          agency can engage in.
+        </p>
+        
+
+        <p>
+          Using TailwindCSS breakpoints, I was able to make it fully responsive
+          for mobile, tablet, laptop, and larger screens.
+        </p>
+
+        <p>
+          <u>
+            <b>Key NPM Packages used:</b>
+          </u>{" "}
+          mui
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "React",
+        techUsage:
+          "The entire website was built on the Javascript Library: React.",
+      },
+      {
+        techName: "TailwindCSS",
+        techUsage:
+          "Instead of regular vanilla CSS, I used the CSS Framework: TailwindCSS, to reduce the development time and create cleaner User Interfaces.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "https://github.com/Ola4606/software-agency",
+    liveUrl: "https://genuine-trifle-7b04b2.netlify.app/",
+  },
+];

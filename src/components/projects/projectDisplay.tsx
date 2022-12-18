@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useParams } from "react-router-dom";
-import allProjectsData from "../../data/projectsData";
+import {PersonalProjectsData, FreelanceProjectsData} from "../../data/projectsData";
 import Footer from "../general/footer";
 import Nav from "../general/nav";
 import TechIcon from "../general/techIcon";
@@ -11,9 +11,20 @@ function ProjectDisplay() {
   let { name } = useParams();
 
   function getProjectData(name: string) {
-    return allProjectsData.filter((i) => {
+    let data;
+    
+    data = PersonalProjectsData.filter((i) => {
       return i.projectID === name;
     });
+
+    //check if the data is in freelance projects or does not exist
+    if(data.length === 0) {
+      return FreelanceProjectsData.filter((i) => {
+        return i.projectID === name;
+      });
+    } else {
+      return data;
+    }
   }
 
   const projectData = useMemo(() => {
