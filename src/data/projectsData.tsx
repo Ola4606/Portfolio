@@ -315,7 +315,7 @@ export const PersonalProjectsData = [
           but I took it a step further and customized the images I was given
           into different shapes and sizes on Canva, I also picked out a livelier
           font on Google Fonts for the website. The clients appreciated the
-          website, but it is still yet to be released to the public for use.
+          website and it is now live to the public.
         </p>
 
         <p>
