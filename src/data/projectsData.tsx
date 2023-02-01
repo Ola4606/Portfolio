@@ -2,6 +2,80 @@ import { Link } from "react-router-dom";
 
 export const PersonalProjectsData = [
   {
+    projectID: "pau-timer",
+    name: "PAU Timer",
+    projectType: "Desktop Application (Windows OS)",
+    techStackUsed: ["Electron", "React", "TailwindCSS"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(783).png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(777).png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(781).png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(782).png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(783).png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(784).png?alt=media"
+    ],
+    shortDescription:
+      "A desktop timer application I made for my university, Pan-Atlantic University.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          A desktop timer application I made for my university, Pan-Atlantic
+          University. It is a timer application built customarily to solve the
+          needs of the university. After noticing the problem of inconsistent
+          timer systems in use by the school and the potential problems it was
+          causing I sought to solve it through the creation of a uniform,
+          school-branded timer application to suit all the needs of students and
+          lecturers alike; hence, the development of the PAU Timer Application.
+        </p>
+
+        <p>
+          I developed the desktop application using ElectronJS, ReactJS, and
+          TailwindCSS.
+        </p>
+
+        <p>
+          The application is essentially a passion project and a way of giving
+          back freely to the school as well as helping in my own way to improve
+          upon the already high standard the Pan-Atlantic University sets for
+          tertiary education in Nigeria. Fortunately, the university approved
+          the use and dissemination of the application throughout the school to
+          be used in presentations, tests, and examinations.
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "React",
+        techUsage:
+          "The entire application was built on the Javascript Library: React.",
+      },
+      {
+        techName: "Electron",
+        techUsage:
+          "This was used to compile the React code into a Desktop application.",
+      },
+      {
+        techName: "TailwindCSS",
+        techUsage:
+          "Instead of regular vanilla CSS, I used the CSS Framework: TailwindCSS, to reduce the development time and create cleaner User Interfaces.",
+      },
+      {
+        techName: "Typescript",
+        techUsage:
+          "I used Typescript to add type control to Javascript variables and React Component Props, to reduce the likelihood of running into bugs caused by type errors.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "",
+    liveUrl: "",
+  },
+
+  {
     projectID: "iaoe",
     name: "iaoe",
     projectType: "Website and AI",
@@ -660,96 +734,96 @@ export const PersonalProjectsData = [
     liveUrl: "https://calmslides.netlify.app/",
   },
 
-  {
-    projectID: "calmslides-bot",
-    name: "CalmSlides Bot",
-    projectType: "Bot",
-    techStackUsed: ["NodeJS", "MongoDB", "Git"],
-    mainImageUrl:
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%20Bot%2F1.png?alt=media",
-    allImagesUrl: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%20Bot%2F1.png?alt=media",
-    ],
-    shortDescription:
-      "This bot provides the image data needed to power my other project, called “CalmSlides”. It runs as a worker bot on Heroku making requests to the Unsplash API at regular intervals and storing this data on MongoDB.",
+  // {
+  //   projectID: "calmslides-bot",
+  //   name: "CalmSlides Bot",
+  //   projectType: "Bot",
+  //   techStackUsed: ["NodeJS", "MongoDB", "Git"],
+  //   mainImageUrl:
+  //     "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%20Bot%2F1.png?alt=media",
+  //   allImagesUrl: [
+  //     "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/CalmSlides%20Bot%2F1.png?alt=media",
+  //   ],
+  //   shortDescription:
+  //     "This bot provides the image data needed to power my other project, called “CalmSlides”. It runs as a worker bot on Heroku making requests to the Unsplash API at regular intervals and storing this data on MongoDB.",
 
-    fullDescription: (
-      <div className="projectDescription">
-        <p>
-          This bot was built using NodeJS, and it simply makes a request to the
-          Unsplash API every 2mins <i>(using the node-schedule NPM package)</i>{" "}
-          to receive data on 30 images.
-        </p>
+  //   fullDescription: (
+  //     <div className="projectDescription">
+  //       <p>
+  //         This bot was built using NodeJS, and it simply makes a request to the
+  //         Unsplash API every 2mins <i>(using the node-schedule NPM package)</i>{" "}
+  //         to receive data on 30 images.
+  //       </p>
 
-        <p>
-          <b>Why I created this bot?</b> I created this bot to solve a problem.
-          I needed thousands of Unsplash images each time a user wanted to have
-          a “relaxation session” on my other project “
-          {
-            <Link
-              to="/projects/calmslides"
-              className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
-            >
-              CalmSlides
-            </Link>
-          }
-          ”, and the Unsplash API <i>(in development mode)</i> restricts the
-          number of requests I can make to 50 requests per hour{" "}
-          <i>
-            (Note: in each request I can retrieve data on up to 30 images
-            maximum)
-          </i>
-          .
-        </p>
+  //       <p>
+  //         <b>Why I created this bot?</b> I created this bot to solve a problem.
+  //         I needed thousands of Unsplash images each time a user wanted to have
+  //         a “relaxation session” on my other project “
+  //         {
+  //           <Link
+  //             to="/projects/calmslides"
+  //             className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
+  //           >
+  //             CalmSlides
+  //           </Link>
+  //         }
+  //         ”, and the Unsplash API <i>(in development mode)</i> restricts the
+  //         number of requests I can make to 50 requests per hour{" "}
+  //         <i>
+  //           (Note: in each request I can retrieve data on up to 30 images
+  //           maximum)
+  //         </i>
+  //         .
+  //       </p>
 
-        <p>
-          Hence to solve this problem I created a bot that made requests for all
-          the image data I could need on the website beforehand, and store it on
-          MongoDB, so I would not need to make an API call each time I needed
-          the images on “
-          {
-            <Link
-              to="/projects/calmslides"
-              className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
-            >
-              CalmSlides
-            </Link>
-          }
-          ”. The bot ran for 4 days, and stored data on 92,813 images, before I
-          shut it down <i>(temporarily)</i>.
-        </p>
+  //       <p>
+  //         Hence to solve this problem I created a bot that made requests for all
+  //         the image data I could need on the website beforehand, and store it on
+  //         MongoDB, so I would not need to make an API call each time I needed
+  //         the images on “
+  //         {
+  //           <Link
+  //             to="/projects/calmslides"
+  //             className="font-sans text-base md:text-lg lg:text-xl font-light text-left text-gray-700 mt-2 md:mt-3 underline underline-offset-2 decoration-gray-400"
+  //           >
+  //             CalmSlides
+  //           </Link>
+  //         }
+  //         ”. The bot ran for 4 days, and stored data on 92,813 images, before I
+  //         shut it down <i>(temporarily)</i>.
+  //       </p>
 
-        <p>
-          It uses the mongoose NPM package to connect to MongoDB and store data
-          in the database.During this project, I learned how to store data in
-          MongoDB by creating Schemas and Models.
-        </p>
+  //       <p>
+  //         It uses the mongoose NPM package to connect to MongoDB and store data
+  //         in the database.During this project, I learned how to store data in
+  //         MongoDB by creating Schemas and Models.
+  //       </p>
 
-        <p>
-          <u>
-            <b>Key NPM Packages used:</b>
-          </u>{" "}
-          node-fetch, mongoose, node-schedule, unsplash-js, dotenv
-        </p>
-      </div>
-    ),
-    techStackAndExplanation: [
-      {
-        techName: "NodeJS",
-        techUsage: "The worker bot was built with NodeJS.",
-      },
-      {
-        techName: "MongoDB Atlas Database",
-        techUsage: "To store metadata of the images that power CalmSlides.",
-      },
-      {
-        techName: "Git",
-        techUsage: "I used Git for version control.",
-      },
-    ],
-    githubUrl: "https://github.com/Ola4606/Calm-Slides-Bot",
-    liveUrl: "",
-  },
+  //       <p>
+  //         <u>
+  //           <b>Key NPM Packages used:</b>
+  //         </u>{" "}
+  //         node-fetch, mongoose, node-schedule, unsplash-js, dotenv
+  //       </p>
+  //     </div>
+  //   ),
+  //   techStackAndExplanation: [
+  //     {
+  //       techName: "NodeJS",
+  //       techUsage: "The worker bot was built with NodeJS.",
+  //     },
+  //     {
+  //       techName: "MongoDB Atlas Database",
+  //       techUsage: "To store metadata of the images that power CalmSlides.",
+  //     },
+  //     {
+  //       techName: "Git",
+  //       techUsage: "I used Git for version control.",
+  //     },
+  //   ],
+  //   githubUrl: "https://github.com/Ola4606/Calm-Slides-Bot",
+  //   liveUrl: "",
+  // },
 ];
 
 export const FreelanceProjectsData = [
@@ -840,7 +914,6 @@ export const FreelanceProjectsData = [
           the Accordion component that shows the kinds of projects the software
           agency can engage in.
         </p>
-        
 
         <p>
           Using TailwindCSS breakpoints, I was able to make it fully responsive

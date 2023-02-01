@@ -1,11 +1,11 @@
 import { useMemo, memo } from "react";
 import swagImage from "../../images/bitmojies/swag.png";
 import TechIcon from "../general/techIcon";
-import TechStackData from "../../data/techStack";
+import {mainTechStackData} from "../../data/techStack";
 
 function Skills() {
   const techStackElements = useMemo(() => {
-    return TechStackData.map((i, index) => {
+    return mainTechStackData.map((i, index) => {
       return (
         <div key={index}>
           <TechIcon techLogo={i.logoUrl} techName={i.name} />

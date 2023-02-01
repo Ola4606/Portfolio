@@ -15,7 +15,7 @@ function Intro() {
               Hello 👋, I'm OlaOluwa
             </p>
             <p className="font-sans text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-left text-black">
-              A Fullstack Web and Mobile Developer, Student, Gamer.
+              A Fullstack Web Developer, Student, Gamer.
             </p>
 
             <div className="mt-4 md:mt-8">

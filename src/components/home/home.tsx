@@ -15,8 +15,8 @@ function Home() {
       <Intro />
       <AboutMe />
       <Skills />
-      <FreelanceProjects />
       <PersonalProjects />
+      <FreelanceProjects />
       <Contact />
       <Footer />
     </div>
