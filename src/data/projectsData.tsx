@@ -13,7 +13,7 @@ export const PersonalProjectsData = [
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(781).png?alt=media",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(782).png?alt=media",
       "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(783).png?alt=media",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(784).png?alt=media"
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/PAU%20Timer%2FScreenshot%20(784).png?alt=media",
     ],
     shortDescription:
       "A desktop timer application I made for my university, Pan-Atlantic University.",
@@ -73,6 +73,98 @@ export const PersonalProjectsData = [
     ],
     githubUrl: "",
     liveUrl: "",
+  },
+
+  {
+    projectID: "hourly-splashes",
+    name: "Hourly Splashes",
+    projectType: "Twitter Bot",
+    techStackUsed: ["NodeJS"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Hourly%20Splashes%2F1.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Hourly%20Splashes%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Hourly%20Splashes%2F2.png?alt=media",
+    ],
+    shortDescription:
+      "A Twitter bot that makes hourly tweets of high quality images.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          A Twitter bot that makes hourly tweets of high quality images. A
+          simple idea I had been wanting to make for a while. The bot sources a
+          random image each hour from Unsplash.com, and posts it on Twitter (for
+          the world to appreciate the time and effort it took to produce the
+          photograph [the perfect shot 📸]).
+        </p>
+
+        <p>The bot makes 24 high quality image tweets every single day.</p>
+
+        <p>
+          <b>
+            Note: All credits for each image is given in full to the
+            photographer on each tweet made by the bot.
+          </b>
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "NodeJS",
+        techUsage: "I used NodeJS to create the entire bot.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "",
+    liveUrl: "https://twitter.com/hourly_splashes",
+  },
+
+  {
+    projectID: "todays-bio",
+    name: "Today's Bio",
+    projectType: "Twitter Bot",
+    techStackUsed: ["NodeJS"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Today's%20Bio%2F1.png?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Today's%20Bio%2F1.png?alt=media",
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Today's%20Bio%2F2.png?alt=media",
+    ],
+    shortDescription:
+      "A Twitter bot that tweets historical facts about each day.",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>A Twitter bot that tweets historical facts about each day.</p>
+
+        <p>
+          <b>For Example:</b>
+        </p>
+
+        <span>
+          <i>
+          On the 5th of February, 1971
+          <p>Astronauts land on the Moon in the Apollo 14 mission.</p>
+          </i>
+        </span>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "NodeJS",
+        techUsage: "I used NodeJS to create the entire bot.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "",
+    liveUrl: "https://twitter.com/TodaysBio",
   },
 
   {
