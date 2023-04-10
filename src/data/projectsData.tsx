@@ -2,6 +2,70 @@ import { Link } from "react-router-dom";
 
 export const PersonalProjectsData = [
   {
+    projectID: "uzoma-draws",
+    name: "Uzoma Draws",
+    projectType: "Website",
+    techStackUsed: ["React", "TailwindCSS", "Firebase"],
+    mainImageUrl:
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Uzoma%20Draws%2F1.PNG?alt=media",
+    allImagesUrl: [
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-25f62.appspot.com/o/Uzoma%20Draws%2F1.PNG?alt=media",
+    ],
+    shortDescription: "Art Portfolio of Uzoma Ogbor",
+
+    fullDescription: (
+      <div className="projectDescription">
+        <p>
+          Uzoma Ogbor, a friend of mine, is a digital illustrator. He publicizes
+          his finished artworks mainly through Instagram and other social media
+          platforms though, he began looking into creating a website for his
+          works. He wanted a place to show his full portfolio (finished works,
+          sketches, comics and so on) as well as a more official medium with
+          which he could interact with viewers and potential clients. However,
+          he had no experience in creating websites and as such ran into a dead
+          end.
+        </p>
+
+        <p>
+          Seeing his incredible artworks, and his present dilemma, I offered to
+          support his career, by helping him create a website (an art portfolio)
+          according to his specifications, free of charge.
+        </p>
+
+        <p>
+          I created the website using ReactJS, Typescript, TailwindCSS, Firebase
+          Authentication, Firebase Storage, and Firebase Cloud Firestore. The
+          website is hosted on Netlify, and the Art Images are hosted on
+          Firebase Storage.
+        </p>
+      </div>
+    ),
+    techStackAndExplanation: [
+      {
+        techName: "React",
+        techUsage:
+          "The entire website was built on the Javascript Library: React.",
+      },
+      {
+        techName: "TailwindCSS",
+        techUsage:
+          "Instead of regular vanilla CSS, I used the CSS Framework: TailwindCSS, to reduce the development time and create cleaner User Interfaces.",
+      },
+      {
+        techName: "Typescript",
+        techUsage:
+          "I used Typescript to add type control to Javascript variables and React Component Props, to reduce the likelihood of running into bugs caused by type errors.",
+      },
+      {
+        techName: "Git",
+        techUsage: "I used Git for version control.",
+      },
+    ],
+    githubUrl: "",
+    liveUrl: "https://uzoma-draws.netlify.app/",
+  },
+
+  {
     projectID: "pau-timer",
     name: "PAU Timer",
     projectType: "Desktop Application (Windows OS)",
@@ -147,8 +211,8 @@ export const PersonalProjectsData = [
 
         <span>
           <i>
-          On the 5th of February, 1971
-          <p>Astronauts land on the Moon in the Apollo 14 mission.</p>
+            On the 5th of February, 1971
+            <p>Astronauts land on the Moon in the Apollo 14 mission.</p>
           </i>
         </span>
       </div>
